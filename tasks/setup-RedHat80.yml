@@ -1,0 +1,15 @@
+---
+- name: Git clone faketime
+  git:
+    repo: git@github.com:wolfcw/libfaketime.git
+    dest: /tmp/faketime
+
+- name: Make faketime
+  make:
+    chdir: /tmp/faketime
+
+- name: Make install faketime
+  become: true
+  make:
+    chdir: /tmp/faketime
+    target: install

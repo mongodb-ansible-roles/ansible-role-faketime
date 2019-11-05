@@ -1,0 +1,10 @@
+---
+- include_tasks: setup-Ubuntu1804.yml
+  when:
+    - ansible_distribution == "Ubuntu"
+    - ansible_distribution_version == "18.04"
+
+- include_tasks: setup-RedHat80.yml
+  when:
+    - ansible_distribution == "RedHat"
+    - ansible_distribution_version == "8.0"

@@ -1,0 +1,5 @@
+---
+- name: Install faketime
+  apt:
+    name: faketime
+    state: present
