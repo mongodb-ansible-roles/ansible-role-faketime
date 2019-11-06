@@ -1,7 +1,7 @@
 ---
 - name: Git clone faketime
   git:
-    repo: git@github.com:wolfcw/libfaketime.git
+    repo: https://github.com/wolfcw/libfaketime.git
     dest: /tmp/faketime
 
 - name: Make faketime
