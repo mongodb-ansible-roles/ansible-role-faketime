@@ -1,7 +1,7 @@
 ---
-- name: Git clone faketime
+- name: Git clone faketime from {{ faketime_repo }}
   git:
-    repo: https://github.com/wolfcw/libfaketime.git
+    repo: "{{ faketime_repo }}"
     dest: /tmp/faketime
 
 - name: Make faketime
