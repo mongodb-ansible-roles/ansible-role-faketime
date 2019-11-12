@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/mongodb-ansible-roles/ansible-role-faketime/compare/v1.0.1...v1.1.0) (2019-11-12)
+
+
+### Features
+
+* Allow to change fake time repo link ([dc7eaca](https://github.com/mongodb-ansible-roles/ansible-role-faketime/commit/dc7eacaea5a6f1ed28e18936e039d9d60e5dc9ed))
+
 ## [1.0.1](https://github.com/mongodb-ansible-roles/ansible-role-faketime/compare/v1.0.0...v1.0.1) (2019-11-06)
 
 
