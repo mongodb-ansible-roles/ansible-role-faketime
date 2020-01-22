@@ -1,2 +1,3 @@
 ---
 faketime_repo: https://github.com/wolfcw/libfaketime.git
+faketime_version: v0.9.8

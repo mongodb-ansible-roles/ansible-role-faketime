@@ -13,6 +13,11 @@ None
 Role Variables
 --------------
 
+| Name | Description | Type | Default | Required |
+|------|-------------|:----:|:-------:|:--------:|
+| `faketime_repo` | URL of the faketime repo to download from | string | https://github.com/wolfcw/libfaketime.git | no
+| `faketime_version` | Version of faketime to download | string | v.0.9.8 | no
+
 Dependencies
 ------------
 
