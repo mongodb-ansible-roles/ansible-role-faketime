@@ -3,6 +3,7 @@
   git:
     repo: "{{ faketime_repo }}"
     dest: /tmp/faketime
+    version: "{{ faketime_version }}"
 
 - name: Make faketime
   make:
@@ -13,3 +14,10 @@
   make:
     chdir: /tmp/faketime
     target: install
+
+- name: Symlink faketime
+  become: true
+  file:
+    state: link
+    src: /usr/local/bin/faketime
+    dest: /usr/bin/faketime
