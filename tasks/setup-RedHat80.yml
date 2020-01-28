@@ -1,19 +1,28 @@
 ---
+- name: Check if maketime is already installed
+  become: true
+  stat:
+    path: /usr/local/bin/faketime
+  register: faketime
+
 - name: Git clone faketime from {{ faketime_repo }}
   git:
     repo: "{{ faketime_repo }}"
     dest: /tmp/faketime
     version: "{{ faketime_version }}"
+  when: not faketime.stat.exists
 
 - name: Make faketime
   make:
     chdir: /tmp/faketime
+  when: not faketime.stat.exists
 
 - name: Make install faketime
   become: true
   make:
     chdir: /tmp/faketime
     target: install
+  when: not faketime.stat.exists
 
 - name: Symlink faketime
   become: true
