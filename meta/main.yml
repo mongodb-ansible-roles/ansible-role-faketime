@@ -1,14 +1,20 @@
 ---
 dependencies:
   - role: geerlingguy.git
+    vars:
+      git_packages:
+        - git
 galaxy_info:
   author: MongoDB
   description: Installs faketime. For Ubuntu, from apt. For Red Hat from source.
   license: Apache
   min_ansible_version: 2.8
   platforms:
-    - name: debian
+    - name: ubuntu
       versions:
-        - buster
+        - bionic
+    - name: el
+      versions:
+        - 8
   galaxy_tags:
     - faketime
