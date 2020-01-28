@@ -6,6 +6,8 @@ driver:
 lint:
   name: yamllint
 platforms:
+  - name: rhel8
+    image: registry.redhat.io/ubi8
   - name: ubuntu1804
     image: ubuntu:18.04
 provisioner:
@@ -13,6 +15,6 @@ provisioner:
   lint:
     name: ansible-lint
 verifier:
-  name: inspec
+  name: testinfra
   lint:
-    name: rubocop
+    name: flake8
