@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/mongodb-ansible-roles/ansible-role-faketime/compare/v1.1.0...v1.2.0) (2020-02-07)
+
+
+### Bug Fixes
+
+* Added symlink to /usr/bin ([47cae28](https://github.com/mongodb-ansible-roles/ansible-role-faketime/commit/47cae284c929b5d60325c5d50c24cb435edca6e2))
+* Make task idempotent ([7e37af5](https://github.com/mongodb-ansible-roles/ansible-role-faketime/commit/7e37af5511d7e1b84027c7a0cc0a0700f5f566af))
+
+
+### Features
+
+* Allow to run on all Red Hat platforms ([773e08a](https://github.com/mongodb-ansible-roles/ansible-role-faketime/commit/773e08a8aaebacd68282f5ae24269424430ded20))
+
 # [1.1.0](https://github.com/mongodb-ansible-roles/ansible-role-faketime/compare/v1.0.1...v1.1.0) (2019-11-12)
 
 
