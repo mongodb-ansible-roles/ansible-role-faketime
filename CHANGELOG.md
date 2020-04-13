@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/mongodb-ansible-roles/ansible-role-faketime/compare/v1.2.0...v1.3.0) (2020-04-13)
+
+
+### Features
+
+* Add ubuntu 20.04 platforms ([a3f90eb](https://github.com/mongodb-ansible-roles/ansible-role-faketime/commit/a3f90eb1bbe809e4199ae96ebd93c537b960b2b4))
+
 # [1.2.0](https://github.com/mongodb-ansible-roles/ansible-role-faketime/compare/v1.1.0...v1.2.0) (2020-02-07)
 
 
